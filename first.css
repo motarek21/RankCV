@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    /* --main-color:#141414; */
+    --main-color:#222222;
+    --sec-color:#ff6500;
+    
+}
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--main-color);
+}
+header{
+    
+    background-color :var(--main-color);
+    color: white;
+    padding: 10px;
+    height: 75px;
+    position: sticky;
+    top:0;
+    z-index: 5;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    transform: translate(30px,-10px);
+    font-size: 50px;
+    font-weight:700;
+}
+header li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    transform: translate(-50px,-16px);
+
+}
+
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+    color: var(--sec-color);
+}
+h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 35px;
+    
+
+}
+.phrase{
+    text-align: center;
+    font-size: 25px;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+h3{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 25px;
+}
+::selection{
+    color:white ;
+    background-color:#222222;
+}
+button{
+    background-color: var(--main-color);
+    color: white;
+    width: 200px;
+    height:75px;
+    font-size: 20px;
+    text-align:center ;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    border: none;
+    font-weight:600;
+    position: relative;
+}
+button:hover{
+    cursor: pointer;
+    background-color:#444444 ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+    transform: translateY(-5px);
+}
+.first-p{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left:5%;
+    color: var(--sec-color);
+
+}
+.first{
+    margin-left: 5%;
+    font-size: 20px;
+    
+}
+.container-2{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:250px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    position: relative;
+}
+/* .logo-2{
+    transform: translate(50px,-50px);
+    font-size: 50px;
+    font-weight: 900;
+} */
+.container-2 h6{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,360%);
+
+}
+.first li {
+    text-transform: capitalize;
+}
