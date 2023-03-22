@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+    box-sizing: border-box;
+}
+:root{
+    --main-color:#222222;
+    --sec-color:#ff6500;
+    
+}
+
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    
+    background-color :var(--main-color);
+    color: white;
+    padding: 10px;
+    height: 75px;
+    z-index: 5;
+    margin-bottom: 10%;
+
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo{
+    transform: translate(30px,-10px);
+    font-size: 50px;
+    font-weight:700;
+}
+header li {
+    list-style: none;
+    color: white;
+    display: inline-block;
+    transform: translate(-50px,-16px);
+
+}
+
+h1{
+    color: var(--sec-color);
+    text-align: center;
+    margin-top: 100px;
+    text-transform: capitalize;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.education,.skills{
+    color: var(--main-color);
+    padding: 10px;
+    margin: auto;
+}
+fieldset{
+    border-radius: 10px;
+    border: 2px solid #222222;
+    padding-bottom: 100px;
+}
+legend{
+    font-size: 25px;
+    font-weight: bold;
+}
+label{
+font-size: 20px;
+font-weight: bold;
+padding: 30px;
+}
+
+input,textarea{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 350px; 
+    font-family: 'Poppins', sans-serif;
+    padding: 5px;
+    /* cursor: pointer; */
+    border-radius: 5px;
+    border: none;
+    background-color: #f8f6f6;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+input:focus,textarea:focus{
+    border: 2px solid #ff6500 !important;
+
+}
+#addskill-label{
+    display: inline-block;
+    margin-top: 10px;
+    margin-top: 10px;
+    color: var(--sec-color);
+    padding-left: 30px;
+}
+#addskill{
+    color: #979595 !important;
+    background-color: #f8f6f6;
+    width: 50px;
+    height: 20px;
+    font-size: 17px;
+    border:none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-weight: bold;
+    line-height: 1.2;
+    cursor: pointer;
+    margin-left: 25px;
+}
+  #skills-fieldset input[type="text"] {
+    display: block;
+    margin-bottom: 15px ;
+    margin-left: 30px;
+  }
+::selection{
+    background-color: #222222;
+    color: white;
+}
+
+@media (min-width:768px){
+    .education {
+        width:70%;
+}
+    .skills {
+    width:70%;
+}
+}
+#skills-fieldset{
+    position: relative;
+}
+#next-button{
+    background-color: #222222;
+    width: 100px;
+    height: 50px;
+    border:none;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    font-size: 15px;
+    position: absolute;
+    left:50%;
+    top:125%;
+    transform: translate(-50%,-50%);
+}
+#next-button:hover{
+    cursor: pointer;
+    background-color:#444444 ;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.19), 0px 6px 6px rgba(0, 0, 0, 0.23);
+}
+.container-2{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:250px;
+    background-color: var(--main-color);
+    color: white;
+    text-align: center;
+    position: relative;
+    margin-top: 300px;
+}
+/* .logo-2{
+    transform: translate(50px,-50px);
+    font-size: 50px;
+    font-weight: 900;
+} */
+.container-2 h6{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,360%);
+
+}
